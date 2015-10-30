@@ -12,6 +12,10 @@
 		E9332FA31BE12EDC009CEB66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9332FA11BE12EDC009CEB66 /* Main.storyboard */; };
 		E9332FA51BE12EDC009CEB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9332FA41BE12EDC009CEB66 /* Assets.xcassets */; };
 		E9332FA81BE12EDC009CEB66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9332FA61BE12EDC009CEB66 /* LaunchScreen.storyboard */; };
+		E961DE7C1BE3162800D23D27 /* TapMe_Resources in Resources */ = {isa = PBXBuildFile; fileRef = E961DE7B1BE3162800D23D27 /* TapMe_Resources */; };
+		E961DE7E1BE31E0100D23D27 /* SecondBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = E961DE7D1BE31E0100D23D27 /* SecondBeep.wav */; };
+		E961DE801BE31E0600D23D27 /* HallOfTheMountainKing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E961DE7F1BE31E0600D23D27 /* HallOfTheMountainKing.mp3 */; };
+		E961DE821BE31E0A00D23D27 /* ButtonTap.wav in Resources */ = {isa = PBXBuildFile; fileRef = E961DE811BE31E0A00D23D27 /* ButtonTap.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		E9332FA41BE12EDC009CEB66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9332FA71BE12EDC009CEB66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9332FA91BE12EDC009CEB66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E961DE7B1BE3162800D23D27 /* TapMe_Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TapMe_Resources; sourceTree = "<group>"; };
+		E961DE7D1BE31E0100D23D27 /* SecondBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = SecondBeep.wav; path = TapMe_Resources/SecondBeep.wav; sourceTree = "<group>"; };
+		E961DE7F1BE31E0600D23D27 /* HallOfTheMountainKing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = HallOfTheMountainKing.mp3; path = TapMe_Resources/HallOfTheMountainKing.mp3; sourceTree = "<group>"; };
+		E961DE811BE31E0A00D23D27 /* ButtonTap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ButtonTap.wav; path = TapMe_Resources/ButtonTap.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		E9332F9C1BE12EDC009CEB66 /* Tap Me */ = {
 			isa = PBXGroup;
 			children = (
+				E961DE7F1BE31E0600D23D27 /* HallOfTheMountainKing.mp3 */,
+				E961DE7D1BE31E0100D23D27 /* SecondBeep.wav */,
+				E961DE811BE31E0A00D23D27 /* ButtonTap.wav */,
+				E961DE7B1BE3162800D23D27 /* TapMe_Resources */,
 				E9332F9D1BE12EDC009CEB66 /* AppDelegate.swift */,
 				E9332F9F1BE12EDC009CEB66 /* ViewController.swift */,
 				E9332FA11BE12EDC009CEB66 /* Main.storyboard */,
@@ -122,7 +134,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E961DE801BE31E0600D23D27 /* HallOfTheMountainKing.mp3 in Resources */,
+				E961DE7C1BE3162800D23D27 /* TapMe_Resources in Resources */,
+				E961DE7E1BE31E0100D23D27 /* SecondBeep.wav in Resources */,
 				E9332FA81BE12EDC009CEB66 /* LaunchScreen.storyboard in Resources */,
+				E961DE821BE31E0A00D23D27 /* ButtonTap.wav in Resources */,
 				E9332FA51BE12EDC009CEB66 /* Assets.xcassets in Resources */,
 				E9332FA31BE12EDC009CEB66 /* Main.storyboard in Resources */,
 			);
@@ -284,6 +300,7 @@
 				E9332FAE1BE12EDC009CEB66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

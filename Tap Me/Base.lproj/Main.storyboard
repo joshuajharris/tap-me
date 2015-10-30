@@ -17,46 +17,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUH-Gc-F3h">
-                                <rect key="frame" x="269" y="20" width="63" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rp-Tj-rnu">
-                                <rect key="frame" x="250" y="456" width="102" height="130"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUH-Gc-F3h">
+                                <rect key="frame" x="234" y="50" width="133" height="46"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="jfi-ip-qSL"/>
+                                    <constraint firstAttribute="width" constant="133" id="YHM-xM-ivP"/>
+                                    <constraint firstAttribute="height" constant="46" id="dvt-Yt-fkU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa6-41-6V9">
-                                <rect key="frame" x="217" y="243" width="167" height="113"/>
+                                <rect key="frame" x="292" y="291" width="16" height="18"/>
                                 <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="113" id="jt9-Oz-8o9"/>
-                                    <constraint firstAttribute="width" constant="167" id="xEF-6n-tnB"/>
-                                </constraints>
-                                <state key="normal" title="Tap Me!"/>
+                                <state key="normal" backgroundImage="TapMe_Resources/button_tap_deselected.png"/>
+                                <state key="highlighted" backgroundImage="TapMe_Resources/button_tap_selected.png"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="kQG-GS-ezj"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TapMe_Resources/checker_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="suZ-JP-diH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Uri-BZ-XOJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TapMe_Resources/checker_bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="ShP-hA-QsJ">
+                                <rect key="frame" x="0.0" y="565" width="600" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="gKU-gS-PV3"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rp-Tj-rnu">
+                                <rect key="frame" x="227" y="436" width="146" height="102"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="XRs-n1-ldp"/>
+                                    <constraint firstAttribute="height" constant="102" id="jfi-ip-qSL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.66999313319562459" green="1" blue="0.7080751676628273" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Sa6-41-6V9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Yh-BP-w0n"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Rp-Tj-rnu" secondAttribute="bottom" constant="14" id="8dw-VM-qhZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Rp-Tj-rnu" secondAttribute="bottom" constant="62" id="8dw-VM-qhZ"/>
+                            <constraint firstItem="suZ-JP-diH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9YQ-E9-NbJ"/>
                             <constraint firstItem="Sa6-41-6V9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AGA-mI-tAm"/>
                             <constraint firstItem="1Rp-Tj-rnu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GRx-Rf-aNv"/>
                             <constraint firstItem="CUH-Gc-F3h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="INV-Uk-dOD"/>
-                            <constraint firstItem="CUH-Gc-F3h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oBF-iD-lTY"/>
+                            <constraint firstItem="ShP-hA-QsJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LkP-Y7-ANr"/>
+                            <constraint firstAttribute="trailing" secondItem="ShP-hA-QsJ" secondAttribute="trailing" id="lok-AZ-Oz9"/>
+                            <constraint firstItem="suZ-JP-diH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mHB-tI-AVL"/>
+                            <constraint firstItem="CUH-Gc-F3h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="oBF-iD-lTY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ShP-hA-QsJ" secondAttribute="bottom" id="oWZ-Ql-1Om"/>
+                            <constraint firstAttribute="trailing" secondItem="suZ-JP-diH" secondAttribute="trailing" id="yrh-3R-mMc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -69,4 +90,10 @@
             <point key="canvasLocation" x="380" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TapMe_Resources/button_tap_deselected.png" width="16" height="16"/>
+        <image name="TapMe_Resources/button_tap_selected.png" width="16" height="16"/>
+        <image name="TapMe_Resources/checker_bottom.png" width="16" height="16"/>
+        <image name="TapMe_Resources/checker_top.png" width="16" height="16"/>
+    </resources>
 </document>
